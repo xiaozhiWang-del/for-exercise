@@ -1,0 +1,7 @@
+for x in range(1,21):
+    for y in range(1,34):
+        z=100-x-y
+        if x*5 + y*3 + z/3 == 100:
+            print("公鸡有",x,"只","母鸡有",y,"只","小鸡有",z,"只")
+else:
+    print("计算完毕")
