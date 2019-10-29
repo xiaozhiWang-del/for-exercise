@@ -1,0 +1,4 @@
+st='''一月Jan二月Feb三月Mar四月Apr五月May六月Jun七月Jul八月Aug九月Sep十月Dec十一Nov十二Dec'''
+mon = int(input('input a month:'))
+n=(mon-1)*5
+print('%s的英文简称为%s'%(st[n:n+2],st[n+2:n+5]))
