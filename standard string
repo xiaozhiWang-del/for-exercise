@@ -1,0 +1,6 @@
+def standard(x):
+    return x.capitalize()
+
+l1=['aDam','LISA','barT']
+L2=list(map(standard,l1))
+print(L2)
