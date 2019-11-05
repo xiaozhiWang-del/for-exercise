@@ -1,0 +1,18 @@
+def judgeCircle(self, moves: str) -> bool:
+        cl=0
+        cr=0
+        cu=0
+        cd=0
+        for i in moves:
+            if i=='L':
+                cl+=1
+            if i=='R':
+                cr+=1
+            if i=='U':
+                cu+=1
+            if i=='D':
+                cd+=1
+        if cl==cr and cu==cd:
+            return 1
+        else:
+            return 0
