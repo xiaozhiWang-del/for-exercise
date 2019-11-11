@@ -1,0 +1,13 @@
+def uniqueMorseRepresentations(self, words: List[str]) -> int:
+        dictt={}
+        result=set()
+        tempa=[".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
+        tempb=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+        for k in range(len(tempb)):
+            dictt[tempb[k]]=tempa[k]
+        for word in words:
+            temp=''
+            for c in word:
+                temp+=dictt[c]
+            result.add(temp)
+        return len(result)
