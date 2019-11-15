@@ -1,0 +1,11 @@
+def diStringMatch(self, S: str) -> List[int]:
+        low,high=0,len(S)
+        A=[]
+        for x in S:
+            if x=='I':
+                A.append(low)
+                low+=1
+            else:
+                A.append(high)
+                high-=1
+        return A+[low]
