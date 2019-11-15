@@ -1,0 +1,13 @@
+def oddCells(self, n: int, m: int, indices: List[List[int]]) -> int:
+        matrix = [[0] * m for _ in range(n)]
+        k=0
+        for x,y in indices:
+            for i in range(n):
+                matrix[i][y]+=1
+            for j in range(m):
+                matrix[x][j]+=1
+        for a in range(n):
+            for b in range(m):
+                if matrix[a][b]%2==1:
+                    k+=1
+        return k
